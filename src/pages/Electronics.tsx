@@ -10,7 +10,7 @@ type Props = {
 
 export default function Electronics({ items }: Props) {
 	const electornicItems = items.filter((item) => item.category === "electronics");
-	const addToCart = useCartStore((state) => state.addToCart);
+	const addToCart = useCartStore((state) => (item: Item) => state.addToCart({ ...item }));
 	const [currentPage, setCurrentPage] = useState(1);
 	const itemsPerPage = 8;
 

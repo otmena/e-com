@@ -6,6 +6,7 @@ type Props = {
 	category?: string;
 	price: number;
 	id: number;
+	addToCart: () => void;
 };
 
 export default function Card({ name, imageURL, price, addToCart }: Props) {

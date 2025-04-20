@@ -2,7 +2,7 @@ import styles from "./Input.module.scss";
 
 type Props = {
 	value: string;
-	onChange: (e) => void;
+	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export default function Input({ value, onChange }: Props) {
