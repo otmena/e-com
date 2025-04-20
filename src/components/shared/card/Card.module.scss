@@ -1,0 +1,36 @@
+.card {
+  padding: 30px;
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  transition: all ease-in-out .1s;
+
+  
+
+  button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+
+  .cardDown {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h2 {
+    flex: 1;
+    border-bottom: 1px dashed #e1e1e1;
+  }
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
